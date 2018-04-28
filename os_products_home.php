@@ -274,11 +274,6 @@ class os_products_home extends Module implements WidgetInterface
         return $this->display(__FILE__, '/views/templates/admin/admin-render.tpl');
     }
 
-    public function isUsingNewTranslationSystem(){
-
-        return false;
-    }
-
     public function hookActionProductDelete($params){
 
         return HomeProduct::deleteByIdProduc($params['id_product']);
